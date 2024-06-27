@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List to Do</title>
+</head>
+
+<body>
+    <main>
+
+        <h1>Sing Up</h1>
+
+<div class="signup">
+    <div class="input-email">
+        <input type="email" name="E-mail" placeholder="Enter your email">
+    </div>
+    <div class="input-password">
+        <input type="password" name="Password" placeholder="Enter your password">
+    </div>
+    <div class="infos-password">
+        <input type="checkbox" name="remember-password" checked />
+        <label for="remember-password">I Agree terms and Conditions</label>
+    </div>
+
+    <div class="btn-signup">
+        <input type="button" value="Sing Up Now">
+    </div>
+</div>
+
+<p>Or With</p>
+
+<div class="btns-easy-logins">
+    <div class="btn-facebook">
+        <img src="logoFacebook.svg" alt="">
+        <p>Login with Facebook</p>
+    </div>
+    <div class="btn-google">
+        <img src="Google Logo.png" alt="">
+        <p>Login with Google</p>
+    </div>
+</div>
+
+<div class="link-signin">
+<p>I already Have an account? <a href="login.html" style="color: #0560FD; text-decoration: none;">Signin</a></p>
+</div>
+</main>
+</body>
+<style>
+     .input-email>input,
+    .input-password>input {
+        background-color: #F6F6F6;
+        border-radius: 5px;
+        border-color: #F6F6F6;
+        border-style: solid;
+    }
+    .btn-signup>input{
+        color: white;
+        background-color: #0560FD;
+        border-radius: 5px;
+        border-color: #0560FD;
+        border-style: solid;
+    }
+    .btn-signup>input:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 5px  #c0c0c0;
+        background-color: #357fff;
+        border-color: #357fff;
+    }
+    .btn-facebook{
+        width: 250px;
+        height: 25px;
+        background-color: #0560FD;
+        color: white;
+        border-radius: 5px;
+    }
+    .btn-facebook>img{
+        width: 15px;
+        height: 15px;
+    }
+    .btn-google>img{
+        width: 15px;
+        height: 15px;
+    }
+    .btn-google{
+        width: 250px;
+        height: 20px;
+        border-color: #0560FD;
+        border-style: solid;
+        color: white;
+        border-radius: 5px;
+        border-width: 1px;
+    }
+</style>
