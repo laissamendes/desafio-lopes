@@ -10,7 +10,7 @@
 <body>
     <main>
 
-        <h1>Sing Up</h1>
+        <h1 style="text-align: center;">Sing Up</h1>
 
 <div class="signup">
     <div class="input-email">
@@ -21,7 +21,7 @@
     </div>
     <div class="infos-password">
         <input type="checkbox" name="remember-password" checked />
-        <label for="remember-password">I Agree terms and Conditions</label>
+        <label for="remember-password" style="text-align: center; font-size: 12px;">I Agree terms and Conditions</label>
     </div>
 
     <div class="btn-signup">
@@ -29,7 +29,7 @@
     </div>
 </div>
 
-<p>Or With</p>
+<p style="text-align: center;"><strong>Or With</strong></p>
 
 <div class="btns-easy-logins">
     <div class="btn-facebook">
@@ -43,17 +43,22 @@
 </div>
 
 <div class="link-signin">
-<p>I already Have an account? <a href="login.html" style="color: #0560FD; text-decoration: none;">Signin</a></p>
+<p style="text-align: center; font-size: 10px;">I already Have an account? <a href="login.html" style="color: #0560FD; text-decoration: none; ">Signin</a></p>
 </div>
 </main>
 </body>
 <style>
+        @import url('https://fonts.googleapis.com/css2?family=Belleza&family=Quicksand:wght@300..700&display=swap');
+
      .input-email>input,
     .input-password>input {
         background-color: #F6F6F6;
         border-radius: 5px;
         border-color: #F6F6F6;
         border-style: solid;
+        width: 300px;
+        height: 30px;
+        margin: 5px;
     }
     .btn-signup>input{
         color: white;
@@ -61,19 +66,27 @@
         border-radius: 5px;
         border-color: #0560FD;
         border-style: solid;
+        width: 300px;
+        height: 30px;
+        margin-top: 15px;
+        
     }
     .btn-signup>input:hover{
         transform: scale(1.05);
-        box-shadow: 0 0 5px  #c0c0c0;
+        box-shadow: 0 0 5px #c0c0c0;
         background-color: #357fff;
         border-color: #357fff;
     }
     .btn-facebook{
-        width: 250px;
-        height: 25px;
+        width: 300px;
+        height: 30px;
         background-color: #0560FD;
         color: white;
         border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
     }
     .btn-facebook>img{
         width: 15px;
@@ -83,13 +96,33 @@
         width: 15px;
         height: 15px;
     }
-    .btn-google{
-        width: 250px;
-        height: 20px;
+    .btn-google {
+        width: 300px;
+        height: 30px;
         border-color: #0560FD;
         border-style: solid;
-        color: white;
+        color: #0560FD;
         border-radius: 5px;
         border-width: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .btn-facebook>p,
+    .btn-google>p {
+        margin-left: 5px;
+    }
+
+    input {
+        margin-bottom: 5px;
+    }
+    main{
+        position: absolute;
+
+    }
+    body{
+        font-family: 'Quicksand';
     }
 </style>

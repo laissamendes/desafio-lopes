@@ -9,7 +9,7 @@
 
 <body>
     <main>
-        <h1>Sing In</h1>
+        <h1 style="text-align: center;">Sing In</h1>
 
         <div class="signin">
             <div class="input-email">
@@ -24,15 +24,13 @@
                 <label for="Password">
                     <span>Password</span>
                 </label> <br>
-
-                <input type="password" name="Password" placeholder="Enter your password">
-                <span class="toggle-password" onclick="togglePasswordVisibility()"></span>
-                <br>
+                <input type="password" name="Password" class="password-input" placeholder="Enter your password">
+                <div class="password-icon"></div>
             </div>
-            <div class="infos-password">
+            <div class="infos-password" style="text-align: center;">
                 <input type="checkbox" name="remember-password" checked />
-                <label for="remember-password">Remember Password</label>
-                <a href="" style="color: #0560FD; text-decoration: none;">Forgot Password?</a>
+                <label for="remember-password" style="font-size: 12px;">Remember Password</label>
+                <a href="" style="color: #0560FD; text-decoration: none;font-size: 12px;">Forgot Password?</a><br>
             </div>
 
             <div class="btn-signIn">
@@ -40,7 +38,7 @@
             </div>
         </div>
 
-        <p><strong>Or With</strong></p>
+        <p style="text-align: center;"><strong>Or With</strong></p>
 
         <div class="btns-easy-logins">
             <div class="btn-facebook">
@@ -54,8 +52,10 @@
         </div>
 
         <div class="link-signup">
-            <p>I don’t Have an account? <a href="signup.html" style="color: #0560FD; text-decoration: none;">Signup</a>
-            </p>
+            <footer>
+                <p style="text-align: center; font-size: 10px;">I don’t Have an account? <a href="signup.html" style="color: #0560FD; text-decoration: none;">Signup</a>
+                </p>
+            </footer>
         </div>
     </main>
 
@@ -63,43 +63,50 @@
 
 </html>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Belleza&family=Quicksand:wght@300..700&display=swap');
+
     .input-email>input,
     .input-password>input {
         background-color: #F6F6F6;
         border-radius: 5px;
         border-color: #F6F6F6;
         border-style: solid;
-        width: 250px;
-        height: 20px;
+        width: 300px;
+        height: 30px;
+        margin: 5px;
     }
-    .input-password>input{
-        position: relative;
-    display: inline-block;
-    }
-    input[type="password"] {
+/* .input-password {
+    position: relative;
+    width: 300px;
+  }
+  .password-input {
     width: 100%;
-    padding: 10px;
+    box-sizing: border-box;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-.toggle-password {
+    border-radius: 4px;
+    outline: none;
+  }
+  .password-icon {
     position: absolute;
-    right: 10px;
-    width: 10px;
-    height: 10px;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
     background-image: url('visibility.png');
     background-size: cover;
     cursor: pointer;
-}
+  } */
     .btn-signIn>input {
         color: white;
         background-color: #0560FD;
         border-radius: 5px;
         border-color: #0560FD;
         border-style: solid;
-        width: 250px;
-        height: 20px;
+        width: 300px;
+        height: 30px;
+        margin-top: 15px;
+        
     }
 
     .btn-signIn>input:hover {
@@ -110,14 +117,16 @@
     }
 
     .btn-facebook {
-        width: 250px;
-        height: 25px;
+        width: 300px;
+        height: 30px;
         background-color: #0560FD;
         color: white;
         border-radius: 5px;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 5px;
+
     }
 
     .btn-facebook>img {
@@ -131,8 +140,8 @@
     }
 
     .btn-google {
-        width: 250px;
-        height: 20px;
+        width: 300px;
+        height: 30px;
         border-color: #0560FD;
         border-style: solid;
         color: #0560FD;
@@ -141,6 +150,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 5px;
     }
 
     .btn-facebook>p,
@@ -154,5 +164,8 @@
     main{
         position: absolute;
 
+    }
+    body{
+        font-family: 'Quicksand';
     }
 </style>
