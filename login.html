@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>List to Do</title>
 </head>
 
@@ -25,7 +26,7 @@
                     <span>Password</span>
                 </label> <br>
                 <input type="password" name="Password" class="password-input" placeholder="Enter your password">
-                <div class="password-icon"></div>
+                <i class="bi bi-eye-fill"></i>
             </div>
             <div class="infos-password" style="text-align: center;">
                 <input type="checkbox" name="remember-password" checked />
@@ -75,28 +76,17 @@
         height: 30px;
         margin: 5px;
     }
-/* .input-password {
-    position: relative;
-    width: 300px;
-  }
-  .password-input {
-    width: 100%;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    outline: none;
-  }
-  .password-icon {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
-    width: 15px;
-    height: 15px;
-    background-image: url('visibility.png');
-    background-size: cover;
-    cursor: pointer;
-  } */
+    .input-password > i{
+        /* cursor: pointer; comando serve para mudar o estilo do click para mão com dedinho */
+        cursor: pointer;
+        position: absolute;
+        right: 5%;
+        color: #0560FD;
+        margin-top: 10px;
+    }
+    i{
+        position: relative;
+    }
     .btn-signIn>input {
         color: white;
         background-color: #0560FD;
